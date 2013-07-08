@@ -6,10 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'rspec-rails'
+gem 'rspec-rails', group: [:development, :test]
 gem 'guard-rspec'
-
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,11 +24,12 @@ end
 gem 'jquery-rails'
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-inotify', '0.8.8'
+  gem 'rb-inotify', '0.9'
   gem 'libnotify', '0.5.9'  
   gem 'guard-spork', '1.2.0'
   gem 'childprocess', '0.3.6'
   gem 'spork', '0.9.2'
+  gem 'factory_girl_rails'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
